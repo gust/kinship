@@ -1,0 +1,17 @@
+-
+    name: SomeController
+    methods:
+        - show
+        - update
+    uses:
+        - SomeModel
+-
+    name: SomeModel
+    methods:
+        - do_something
+    has_many:
+        - SubModel
+-
+    name: SubModel
+    methods:
+        - something_else
